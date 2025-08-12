@@ -62,7 +62,7 @@ def trang_chu():
     return {"thong_diep": "Chào mừng đến API Quản Lý Người Dùng với MongoDB"}
 # 6. API thêm người dùng
 @app.post("/user")   
-#=>>>>>>>>>>>>>>>>>>>>>>sự khác biệt giữa () trong hàm 6&7 là 
+#=>>>>>>>>>>>>>>>>>>>>>>sự khác biệt giữa () trong hàm 5&6 là 
 #Get () rỗng vì kh cần dữ lịu đầu vào 
 #Post (du...:... cần dưx liệu vì nhận dữ liệu từ ng dùng gửi lên)
 def them_user(du_lieu:user):
