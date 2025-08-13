@@ -45,7 +45,7 @@ Tự động ép kiểu (nếu có thể).
 Tích hợp sẵn với FastAPI để hiển thị tài liệu API trên /docs."""
     name: str
     email: str
-    age: int
+    age: int            
 
 # 4. định dạng 
 def dinh_dang_user(user_goc) -> dict:
@@ -78,7 +78,7 @@ def them_user(du_lieu:user):
 @app.get("/user")
 def lay_danh_sach():
     tat_ca = users_collection.find()  #find lấy tất cả tài liệu trong doc của collection
-    return [dinh_dang_user(nd) for nd in tat_ca]    #[ biểu_thức for i in range hài lúc học ]
+    return [dinh_dang_user(user) for user in tat_ca]    #[ biểu_thức for i in range hài lúc học ]
 
 """ket_qua = []
 for nd in tat_ca:
